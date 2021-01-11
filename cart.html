@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>shopping carte </title>
+    <link rel="stylesheet" type="text/css" href="cart.css" />
+</head>
+
+<body>
+
+
+    <section class="prix total">
+        <div class="shop">
+            <div class="entete">
+            <h2 class="txt1">le prix total de votre commande est :</h2>
+            <input type="text" id="sommetotal" placeholder="0">
+            <h2 class="txt1">    Dinar Tunisien</h2>
+        </div>
+
+            <img src="shopping.jpg" class="image1">
+            
+        </div>
+    </section>
+    <hr>
+
+
+    <section class="section1">
+        <div class="carte1" >
+                
+                <button class="btn_liketoggle" onclick= "changeColor('btn_liketoggle')">
+                  <span>Like</span> <i class="fas_fa-heart"></i>
+                </button>
+                <button onclick="supp('carte1')">
+                     <span>supp article</span>
+                </button>
+           
+            <img src="shoes.jpg" class="sho">
+                <span>prix d'article 70</span>
+                <button onclick="accrement1('qte1','somme1','sommetotal')">
+                    +
+                </button>
+                <input type="text" id="qte1" value="0">
+                <button onclick="descrem1('qte1','somme1','sommetotal')">
+                     <span>-</span>  
+                 </button>
+                 
+                 <span>prix total d'article</span>
+                 <input type="text" id="somme1" value="0">
+                
+        </div>
+    </section>
+
+
+    <hr>
+    <section class="section2">
+        <div class="carte2">
+            
+            <button type="submit" class="btn_liketoggle" onclick= "changeColor('btn_liketoggle')">
+                <span>Like</span> <i class="fas fa-heart"></i>
+      
+            </button>
+            <button type="submit" class="suppression" name="supp_article">
+                <span>supp article</span>
+            </button>
+            
+            <img src="tshirt.jpg" class="tsh">
+            <span>prix d'article 40</span>
+            <button type="submit" class="accrementation2" onclick="accrement2('qte2','somme2','sommetotal')">
+                <span>+</span>
+            </button>
+            <input type="text" id="qte2"  value="0">
+            <button onclick="descrem2('qte2','somme2','sommetotal')">
+                <span>-</span>  
+            </button>
+           
+            <span>prix total d'article</span>
+            <input type="text" id="somme2"value="0">
+        
+        </div>
+    </section>
+    <hr>
+    <section class=section3>
+        <div class="carte3">
+            <button type="submit" id="btn3" class="btn_liketoggle" onclick= "changeColor('btn_liketoggle')">
+                <span>Like</span> <i class="fas fa-heart"></i>
+      
+            </button>
+            <button type="submit" class="suppression" name="supp_article">
+                <span>supp article</span>
+            </button>
+            <img src="pontallon.jpg" class="pont"> 
+            <span>prix d'article 60</span>
+            <button type="submit" class="accrementation3" onclick="accrement3('qte3','somme3','sommetotal')">
+                <span>+</span>
+            </button>
+            <input type="text" id="qte3" name="qte" value="0">
+            <button onclick="descrem3('qte3','somme3','sommetotal')">
+                <span>-</span>  
+            </button>
+            <span>prix total d'article</span>
+           
+            <input type="text" id="somme3" value="0">
+        
+        </div>
+    </section>
+</body>
+<script src="cart.js"></script>
+</html>
